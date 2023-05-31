@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 // Components
 import Header from "../components/layout/Header";
 // Picture
-import { moi } from "../assets/img";
 import LeftBtn from "../components/utils/LeftBtn";
 import RightBtn from "../components/utils/RightBtn";
 
@@ -23,7 +22,7 @@ const Profil = () => {
                     repeatDelay: 6
                 }}
                 className="container-profil--picture">
-                    <img src={moi} alt="" />
+                    <img src="../../src/assets/img/moi.png" alt="photo du créateur du portfolio" />
                 </motion.div>
                 <div className="container-profil--text">
                     <p>

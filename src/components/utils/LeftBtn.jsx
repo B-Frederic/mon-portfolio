@@ -1,6 +1,7 @@
-// Icons
-import {BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill} from "react-icons/bs";
+// React
 import { NavLink } from "react-router-dom";
+// Icons
+import {BsArrowLeftCircle} from "react-icons/bs";
 
 const LeftBtn = (props) => {
 
@@ -8,7 +9,7 @@ const LeftBtn = (props) => {
         <div className="container-btn-left">
             {props.left && (
                 <NavLink to={props.left}>
-                    <BsFillArrowLeftCircleFill className="container-btn--prev" />
+                    <BsArrowLeftCircle className="container-btn--prev" />
                 </NavLink>
             )}
         </div>
