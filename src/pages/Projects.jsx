@@ -8,8 +8,6 @@ import RightBtn from '../components/utils/RightBtn';
 import dataProjects from '../data/data_projects';
 // Icons
 import { FaGithub, FaEye } from "react-icons/fa";
-// Pictures
-import { portfolio } from '../assets/img';
 
 const Projects = () => {
     return (
@@ -17,7 +15,7 @@ const Projects = () => {
             <Header />
             <div className="container-projects">
                 <div className="container-projects--filter">
-                    <p>Filtre:</p>
+                    <p>Filtrer:</p>
                     <ul>
                         <li>JS</li>
                         <li>React</li>
@@ -35,17 +33,7 @@ const Projects = () => {
                         <div className="container-projects--box-card" key={index}>
                             <h2>{element.title}</h2>
                             <span>{element.tag}</span>
-                            <img src={portfolio}></img>
-                            <div className="container-projects--box-card-list">
-                            Technos:
-                                <ul>
-                                {
-                                    element.lang.map((item, index) => (
-                                        <li key={index}>{item}</li>  
-                                        ))    
-                                    }
-                                </ul>
-                            </div>
+                            <img src={element.img} alt={element.alt}></img>
                             <div className="container-projects--box-card-social">
                                 <Link to={element.view} className="container-projects--box-card-social-link"><FaEye /></Link>
                                 <Link to={element.code} className="container-projects--box-card-social-link"><FaGithub /></Link>
