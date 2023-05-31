@@ -11,7 +11,7 @@
     &--picture{
         margin: 7rem 0 3rem;
 
-        @media (min-width: 900px){
+        @media (min-width: 901px){
             margin: 10rem 0 3rem;;
         }
 
@@ -20,7 +20,7 @@
             border-radius: 65px 20px 65px 20px;
             box-shadow: 2px 1px 3px 2px var(--goldenrod);
 
-            @media (min-width: 900px){
+            @media (min-width: 901px){
                 width: 300px;
             }
         }
