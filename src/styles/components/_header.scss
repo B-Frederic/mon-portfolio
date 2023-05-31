@@ -23,7 +23,7 @@
 
             li{
                 margin: 0px 20px;
-                color: var(--color-white);
+                color: var(--white);
                 cursor: pointer; 
             }
             
@@ -35,7 +35,7 @@
                     text-decoration: underline;
                     text-decoration-thickness: 0.1rem;
                     text-underline-offset: 0.5rem;
-                    color: var(--color-goldenrod);
+                    color: var(--goldenrod);
                 }
             }
         }
@@ -49,7 +49,7 @@
         align-items: center;
         justify-content: center;
         font-size: 2rem;
-        color: var(--color-goldenrod);
+        color: var(--goldenrod);
 
         @media (min-width: 900px){
             display: none;

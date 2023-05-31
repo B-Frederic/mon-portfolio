@@ -1,8 +1,9 @@
 :root {
-    --color-white: #fff;
-    --color-black: #000;
-    --color-gold: #ffd700;
-    --color-goldenrod: #daa520;
+    --white: #fff;
+    --black: #000;
+    --gold: #ffd700;
+    --goldenrod: #daa520;
+    --background: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
 }
 
 *{
