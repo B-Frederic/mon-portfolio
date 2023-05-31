@@ -3,7 +3,7 @@ import Header from "../components/layout/Header";
 import LeftBtn from "../components/utils/LeftBtn";
 import RightBtn from "../components/utils/RightBtn";
 // Motion
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const Home = () => {
     return (

@@ -42,14 +42,19 @@
     }
 
     &--menu-burger{
+        z-index: 50;
         position: fixed;
         top: 1.5rem;
         right: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        background: var(--goldenrod);
+        border-radius: 50%;
         font-size: 2rem;
-        color: var(--goldenrod);
+        color: var(--black);
 
         @media (min-width: 900px){
             display: none;
