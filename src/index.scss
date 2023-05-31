@@ -1,1 +1,11 @@
+// General
 @use "./settings";
+// Pages
+@use "./styles/pages/home";
+// Components
+@use "./styles/components/header";
+@use "./styles/components/layout/burgerMenu";
+@use "./styles/components/responsiveBtn";
+// Utils
+@use "./styles/components/utils/rightBtn";
+@use "./styles/components/utils/leftBtn";
