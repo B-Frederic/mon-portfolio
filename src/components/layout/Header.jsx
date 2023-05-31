@@ -39,10 +39,10 @@ const Header = () => {
                 </nav>
             </motion.div>
             <motion.div
-            initial={{scale: 0, rotateX: 720}}
-            animate={{scale: 1, rotateX: 0}}
+            initial={{scale: 0}}
+            animate={{scale: 1}}
             transition={{
-                duration: "2.5"
+                duration: "1"
             }}
             className="container-header--menu-burger">
                 <RxHamburgerMenu onClick={handleBurgerMenu} />
