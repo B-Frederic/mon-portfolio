@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Profil from "./pages/Profil";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/profil" element={<Profil />} />
         <Route path="/projets" element={<Projects />} />
         <Route path="/competences" element={<Skills />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

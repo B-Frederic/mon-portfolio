@@ -24,8 +24,8 @@ const Projects = () => {
                             <span>{element.tag}</span>
                             <img src={element.img} alt={element.alt}></img>
                             <div className="container-projects--box-card-social">
-                                <Link to={element.view} className="container-projects--box-card-social-link"><FaEye /></Link>
-                                <Link to={element.code} className="container-projects--box-card-social-link"><FaGithub /></Link>
+                                <Link to={element.view} target="_blank" className="container-projects--box-card-social-link"><FaEye /></Link>
+                                <Link to={element.code} target="_blank" className="container-projects--box-card-social-link"><FaGithub /></Link>
                             </div>
                         </div>        
                     ))
