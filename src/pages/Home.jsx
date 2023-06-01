@@ -30,17 +30,10 @@ const Home = () => {
                 >
                     Bienvenue sur mon portfolio. Je vous souhaite une très bonne visite et surtout n'hésitez pas à me contacter si mon profil vous intéresse.
                 </motion.p>
-                <motion.div
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                transition={{
-                    duration: "3",
-                    delay: "0.5"
-                }}
-                >
+                <div>
                     <LeftBtn left={"/contact"} />
                     <RightBtn right={"/profil"}/>
-                </motion.div>
+                </div>
             </div>
         </div>
     );

@@ -31,8 +31,8 @@ const Profil = () => {
                 </div>
             </div>
             <div>
-                    <LeftBtn left={"/"} />
-                    <RightBtn right={"/projets"}/>
+                <LeftBtn left={"/"} />
+                <RightBtn right={"/projets"}/>
             </div>
         </div>
     );

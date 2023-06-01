@@ -7,8 +7,6 @@ import BurgerMenu from "./BurgerMenu";
 import data from "../../data/data_links";
 // Icons
 import { RxHamburgerMenu } from "react-icons/rx";
-// Motion
-import { motion } from "framer-motion";
 
 const Header = () => {
 
@@ -20,12 +18,7 @@ const Header = () => {
 
     return (
         <div className="container-header">
-            <motion.div
-            initial={{y: -200}}
-            animate={{y: 0}}
-            transition={{
-                duration: "2"
-            }}
+            <div
             className="container-header--navbar">
                 <nav>
                     <ul>
@@ -37,16 +30,10 @@ const Header = () => {
                         }
                     </ul>
                 </nav>
-            </motion.div>
-            <motion.div
-            initial={{scale: 0}}
-            animate={{scale: 1}}
-            transition={{
-                duration: "1"
-            }}
-            className="container-header--menu-burger">
+            </div>
+            <div className="container-header--menu-burger">
                 <RxHamburgerMenu onClick={handleBurgerMenu} />
-            </motion.div>
+            </div>
             {burgerMenu && <BurgerMenu setBurgerMenu={setBurgerMenu} />}
         </div>
     );
