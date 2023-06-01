@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import LeftBtn from '../components/utils/LeftBtn';
 import RightBtn from '../components/utils/RightBtn';
+import Filter from '../components/utils/Filter';
 // Data
 import dataProjects from '../data/data_projects';
 // Icons
@@ -14,19 +15,7 @@ const Projects = () => {
         <div>
             <Header />
             <div className="container-projects">
-                <div className="container-projects--filter">
-                    <p>Filtrer:</p>
-                    <ul>
-                        <li>JS</li>
-                        <li>React</li>
-                        <li>Vue</li>
-                        <li>Next</li>
-                        <li>CSS</li>
-                        <li>Scss</li>
-                        <li>Tailwind</li>
-                        <li>Material-UI</li>
-                    </ul>
-                </div>
+            <Filter />
                 <div className="container-projects--box">
                 {
                     dataProjects.map((element, index) => (

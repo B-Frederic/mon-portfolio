@@ -4,6 +4,7 @@
 @use "./styles/pages/home";
 @use "./styles/pages/profil";
 @use "./styles/pages/projects";
+@use "./styles/pages/skills";
 // Components
 @use "./styles/components/header";
 @use "./styles/components/layout/burgerMenu";
@@ -11,3 +12,4 @@
 // Utils
 @use "./styles/components/utils/rightBtn";
 @use "./styles/components/utils/leftBtn";
+@use "./styles/components/utils/filter";

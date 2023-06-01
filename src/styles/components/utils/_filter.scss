@@ -1,0 +1,56 @@
+.container-filter {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+
+    &--box{
+       
+        h2{
+            font-size: 2rem;
+            margin: 1rem 0 2rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        &-list {
+
+            ul{
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                li{
+                    margin: 0.5em;
+                    padding: 0.5rem 0.8rem;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    border: 2px solid var(--goldenrod);
+                    border-radius: 1.5rem;
+                    background: #bbb;
+        
+                    @media (min-width: 901px){
+                        cursor: pointer;
+        
+                        &:hover{
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+            
+            span{
+                border-left: 5px solid var(--goldenrod);
+                border-radius: 50px;
+                display: inline-block;
+                height: 35px;
+                margin: 0 20px;
+            }
+        }
+
+    }  
+}
