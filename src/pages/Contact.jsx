@@ -16,9 +16,6 @@ const Contact = () => {
             <Header />
             <div className="container-contact">
                 <h2>Contact</h2>
-                <div className="container-contact--info">
-                    <p>Info: J'ai pris la décision de supprimer le formulaire de contact relié par <span>EmailJS</span> et vérifié avec <span>Yup</span>. N'ayant aucune prise de contact par ce formulaire. J'ai mis à disposition les moyens les plus utilisés et rapide pour me contacter.</p>
-                </div>
                 <div className="container-contact--linkedin">
                     <p>
                         Contactez moi par Linkedin :
