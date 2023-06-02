@@ -1,17 +1,16 @@
+@import "../../settings";
+
 .container-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+    @include display;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0 1rem;
     background-image: var(--background);
     
     h2{
-        margin-top: 4rem;
+        margin-top: 8rem;
         margin-bottom: 4rem;
-        font-size: 2.5rem;
         color: var(--goldenrod);
     }
 
@@ -34,10 +33,7 @@
 
     &--linkedin,
     &--email{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        @include display;
         margin: 2rem 0;
 
         p{
@@ -77,6 +73,11 @@
 
     &--email {
         
+        a{
+            color: #0270AD;
+            text-decoration: none;
+        }
+
         &-icon{
             font-size: 4rem;
             border-radius: 6px;

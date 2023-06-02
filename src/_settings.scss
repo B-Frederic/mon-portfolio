@@ -1,15 +1,25 @@
 :root {
     --white: #fff;
     --black: #000;
-    --gold: #ffd700;
     --goldenrod: #daa520;
     --background: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
+}
+
+@mixin display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h2{
+    font-size: 2.5rem;
 }
 
 li{

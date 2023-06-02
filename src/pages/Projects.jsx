@@ -1,115 +1,112 @@
 // React
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 // Components
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
-import LeftBtn from '../components/utils/LeftBtn';
-import RightBtn from '../components/utils/RightBtn';
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
+import LeftBtn from "../components/utils/LeftBtn";
+import RightBtn from "../components/utils/RightBtn";
 // Data
-import dataProjects from '../data/data_projects';
-import dataFilter from '../data/data_filter';
+import dataProjects from "../data/data_projects";
+import dataFilter from "../data/data_filter";
 // Icons
 import { FaGithub, FaEye } from "react-icons/fa";
 
-
 const Projects = () => {
-
   const [selectFilter, setSelectFilter] = useState([]);
   const [filterProject, setFilterProject] = useState(dataProjects);
 
   const handleFilter = (type) => {
-  
-    if(selectFilter.includes(type)){
-
-        let filters = selectFilter.filter((element) => element !== type);
-        setSelectFilter(filters);
-        
+    if (selectFilter.includes(type)) {
+      let filters = selectFilter.filter((element) => element !== type);
+      setSelectFilter(filters);
     } else {
-
-        setSelectFilter([type]);
+      setSelectFilter([type]);
     }
-  }
+  };
 
   const filterProjects = () => {
-
     if (selectFilter.length > 0) {
+      let tempProject = selectFilter.map((element) => {
+        let temp = dataProjects.filter(
+          (item) =>
+            item.front === element ||
+            item.css === element ||
+            item.redux === element ||
+            item.back === element ||
+            item.tool === element ||
+            item.payment === element
+        );
 
-        let tempProject = selectFilter.map((element) => {
+        return temp;
+      });
 
-            let temp = dataProjects.filter((item) => 
-                (item.front === element) || 
-                (item.css === element) ||
-                (item.redux === element) || 
-                (item.back === element) || 
-                (item.tool === element)|| 
-                (item.payment === element)
-            )
-
-            return temp;
-        });
-        
-        setFilterProject(tempProject.flat());
-
+      setFilterProject(tempProject.flat());
     } else {
-        setFilterProject([...dataProjects]);
+      setFilterProject([...dataProjects]);
     }
   };
 
   useEffect(() => {
-    
     filterProjects();
+  }, [selectFilter]);
 
-  }, [selectFilter])
-  
-  
-    return (
-        <div>
-            <Header />
-            <div className="container-projects">
-                <div className="container-projects--filter">
-                    <h2>Filtrer :</h2>
-                    <div className="container-projects--filter-list">
-                        <ul>
-                            {
-                                dataFilter.map((element, index) => (
-                                    <li 
-                                    key={index} 
-                                    style={{ borderColor: element.style}}
-                                    className={selectFilter?.includes(element.active) ? "active" : ""} 
-                                    onClick={() => handleFilter(element.filter)}
-                                    >
-                                    {element.text}
-                                    </li>
-                                ))
-                            }
-                        </ul>
-                    </div>
-                </div>
-                <div className="container-projects--box">
-                {
-                    filterProject.map((element, index) => (
-                        <div
-                        className="container-projects--box-card" key={index}>
-                            <h2>{element.title}</h2>
-                            <span>{element.tag}</span>
-                            <img src={element.img} alt={element.alt}></img>
-                            <div className="container-projects--box-card-social">
-                                <Link to={element.view} target="_blank" className="container-projects--box-card-social-link"><FaEye /></Link>
-                                <Link to={element.code} target="_blank" className="container-projects--box-card-social-link"><FaGithub /></Link>
-                            </div>
-                        </div>        
-                    ))
-                }
-                </div>
-            </div>
-            <div>
-                <LeftBtn left={"/profil"} />
-                <RightBtn right={"/competences"}/>
-            </div>
-            <Footer />
+  return (
+    <div>
+      <Header />
+      <div className="container-projects">
+        <div className="container-projects--filter">
+          <h2>Filtrer :</h2>
+          <div className="container-projects--filter-list">
+            <ul>
+              {dataFilter.map((element, index) => (
+                <li
+                  key={index}
+                  style={{ borderColor: element.style }}
+                  className={
+                    selectFilter?.includes(element.active) ? "active" : ""
+                  }
+                  onClick={() => handleFilter(element.filter)}
+                >
+                  {element.text}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-    );
+        <div className="container-projects--box">
+          {filterProject.map((element, index) => (
+            <div className="container-projects--box-card" key={index}>
+              <h2>{element.title}</h2>
+              <span>{element.tag}</span>
+              <img src={element.img} alt={element.alt}></img>
+              <div className="container-projects--box-card-social">
+                <Link
+                  to={element.view}
+                  target="_blank"
+                  className="container-projects--box-card-social-link"
+                >
+                  <FaEye />
+                </Link>
+                <Link
+                  to={element.code}
+                  target="_blank"
+                  className="container-projects--box-card-social-link"
+                >
+                  <FaGithub />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <LeftBtn left={"/profil"} />
+        <RightBtn right={"/competences"} />
+      </div>
+      <Footer />
+    </div>
+  );
 };
 
 export default Projects;
