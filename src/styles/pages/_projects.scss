@@ -6,6 +6,59 @@
     width: 100%;
     height: 100%;
     background-image: var(--background);
+
+    &--filter{
+
+        margin-top: 8rem;
+
+        @media (min-width: 901px){
+            margin-top: 10rem;
+        }
+
+        h2{
+            font-size: 2rem;
+            margin: 1rem 0 2rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        &-list {
+
+            ul{
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                li{
+                    margin: 0.5em;
+                    padding: 0.5rem 0.8rem;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    border: 3px solid var(--goldenrod);
+                    border-radius: 1.5rem;
+                    background: #bbb;
+                    
+                    @media (min-width: 901px){
+
+                        cursor: pointer;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .active{
+                    background: #333;
+                    color: var(--white);
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+    }
     
     &--box{
 
