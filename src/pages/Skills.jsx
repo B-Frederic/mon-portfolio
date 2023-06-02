@@ -1,3 +1,5 @@
+// React
+import { Link } from "react-router-dom";
 // Components
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
@@ -11,6 +13,9 @@ import {
   dataOther,
   dataSoftSkills,
 } from "../data/data_skills";
+// Picture
+import { cv } from "../assets/img";
+import { cvDesktop, cvImp } from "../assets/CV";
 
 const Skills = () => {
   return (
@@ -65,16 +70,16 @@ const Skills = () => {
         <div className="container-skills--box-cv">
           <h2>Curriculum Vitae</h2>
           <div>
-            <img src="../../src/assets/img/CV.png" alt="curriculum vitae" />
+            <img src={cv} alt="curriculum vitae" />
           </div>
           <div className="container-skills--box-cv-button">
             <div>
-              <p>CV version actuel (format couleur identique)</p>
-              <button>Télécharger le CV</button>
+              <p>CV format ordi (couleur identique)</p>
+              <Link to={cvDesktop} target="_blank"><button>Télécharger le CV</button></Link>
             </div>
             <div>
-              <p>CV version imprimable (format économies d'ancre)</p>
-              <button>Télécharger le CV</button>
+              <p>CV format imprimable (couleur modifié)</p>
+              <Link to={cvImp} target="_blank"><button>Télécharger le CV</button></Link>
             </div>
           </div>
         </div>

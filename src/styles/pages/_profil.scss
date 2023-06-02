@@ -26,12 +26,15 @@
     }
 
     &--text{
-        width: 95%;
         margin-bottom: 4rem;
         padding: 0 1rem;
         font-size: 1.1rem;
         color: var(--white);
         line-height: 1.5rem;
         letter-spacing: 0.1rem;
+
+        @media (min-width: 901px){
+            width: 75%;
+        }
     }
 }
