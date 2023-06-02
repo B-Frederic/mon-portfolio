@@ -19,7 +19,6 @@ const Profil = () => {
                 transition={{
                     duration: "2",
                     ease: "easeInOut",
-                    repeat: Infinity,
                     repeatDelay: 6
                 }}
                 className="container-profil--picture">

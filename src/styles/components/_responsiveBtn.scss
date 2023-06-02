@@ -1,4 +1,25 @@
 .container-btn{
+
+    &-right,
+    &-left{
+
+        position: fixed;
+        bottom: 1rem;
+        font-size: 2.5rem;
+        
+        @media (min-width: 900px){
+            display: none;
+        }
+    }
+
+    &-right{
+        right: 1rem;
+    }
+
+    &-left{
+        left: 1rem;
+    }
+
     &--prev,
     &--next{
         color: var(--goldenrod);

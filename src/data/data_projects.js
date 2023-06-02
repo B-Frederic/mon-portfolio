@@ -11,7 +11,7 @@ const dataProjects = [
         back: "laravel",
         tool: "firebase",
         view: "https://musclay.web.app/",
-        code: "",
+        code: "https://github.com/B-Frederic/musclay",
     },
     {
         title: "Mot Mystère",
@@ -70,8 +70,8 @@ const dataProjects = [
         type: ["react", "scss"],
         front: "react",
         css: "scss",
-        view: "",
-        code: "",
+        view: "https://frederic-betaouaf-portfolio.netlify.app/",
+        code: "https://github.com/B-Frederic/mon-portfolio",
     },
 ]
 
