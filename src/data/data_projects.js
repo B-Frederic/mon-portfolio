@@ -1,9 +1,10 @@
+import { beauty, monshop, motmystere, musclay, portfolio, shopshoes } from "../assets/img"; 
 
 const dataProjects = [
     {
         title: "Musclay",
         tag: "Sport",
-        img: "../src/assets/img/musclay.png",
+        img: `${musclay}`,
         alt: "photo du site Musclay",
         type: ["react", "laravel", "m-ui", "firebase"],
         front: "react",
@@ -16,7 +17,7 @@ const dataProjects = [
     {
         title: "Mot Mystère",
         tag: "Jeu",
-        img: "../src/assets/img/motmystere.png",
+        img: `${motmystere}`,
         alt: "photo du site Mot Mystère",
         type: ["js", "css"],
         front: "js",
@@ -27,7 +28,7 @@ const dataProjects = [
     {
         title: "Mon Shop",
         tag: "E-commerce",
-        img: "../src/assets/img/monshop.png",
+        img: `${monshop}`,
         alt: "photo du site Mon Shop",
         type: ["react", "tailwind", "firebase", "stripe", "express"],
         front: "react",
@@ -41,7 +42,7 @@ const dataProjects = [
     {
         title: "Beauty",
         tag: "E-commerce",
-        img: "../src/assets/img/beauty.png",
+        img: `${beauty}`,
         alt: "photo du site Beauty",
         type: ["react","redux/redux toolkit", "scss"],
         front: "react",
@@ -53,7 +54,7 @@ const dataProjects = [
     {
         title: "Shop Shoes",
         tag: "E-commerce",
-        img: "../src/assets/img/shopshoes.png",
+        img: `${shopshoes}`,
         alt: "photo du site Shop Shoes",
         type: ["react","redux/redux toolkit", "tailwind"],
         front: "react",
@@ -65,7 +66,7 @@ const dataProjects = [
     {
         title: "Portfolio",
         tag: "Portfolio",
-        img: "../src/assets/img/portfolio.png",
+        img: `${portfolio}`,
         alt: "photo du site Portfolio",
         type: ["react", "scss"],
         front: "react",
