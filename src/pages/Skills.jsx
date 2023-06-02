@@ -1,4 +1,5 @@
 // Components
+import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import LeftBtn from "../components/utils/LeftBtn";
 import RightBtn from "../components/utils/RightBtn";
@@ -93,6 +94,7 @@ const Skills = () => {
                     <LeftBtn left={"/projets"} />
                     <RightBtn right={"/contact"}/>
                 </div>
+            <Footer />
             </div>
         </div>
     );

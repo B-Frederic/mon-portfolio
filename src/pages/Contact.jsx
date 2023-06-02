@@ -2,6 +2,7 @@
 import {  Link } from "react-router-dom";
 // Components
 import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 import LeftBtn from "../components/utils/LeftBtn";
 import RightBtn from "../components/utils/RightBtn";
 // Icons
@@ -39,6 +40,7 @@ const Contact = () => {
                 <LeftBtn left={"/competences"} />
                 <RightBtn right={"/"}/>
             </div>
+            <Footer />
         </div>
     );
 };

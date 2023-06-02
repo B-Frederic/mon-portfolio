@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 // Components
 import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 // Picture
 import LeftBtn from "../components/utils/LeftBtn";
 import RightBtn from "../components/utils/RightBtn";
@@ -34,6 +35,7 @@ const Profil = () => {
                 <LeftBtn left={"/"} />
                 <RightBtn right={"/projets"}/>
             </div>
+            <Footer />
         </div>
     );
 };

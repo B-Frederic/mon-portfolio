@@ -7,9 +7,11 @@
 @use "./styles/pages/skills";
 @use "./styles/pages/contact";
 // Components
-@use "./styles/components/header";
-@use "./styles/components/layout/burgerMenu";
 @use "./styles/components/responsiveBtn";
+// Components layout
+@use "./styles/components/layout/burgerMenu";
+@use "./styles/components/layout/header";
+@use "./styles/components/layout/footer";
 // Utils
 @use "./styles/components/utils/rightBtn";
 @use "./styles/components/utils/leftBtn";
