@@ -5,8 +5,9 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    opacity: 0.95;
-    background: #000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
 
     @media (min-width: 900px){
         display: none;
@@ -36,7 +37,8 @@
         margin-top: 2rem;
 
         li{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: bold;
             margin-top: 3rem;
             padding: 1rem;
             color: #fff;
