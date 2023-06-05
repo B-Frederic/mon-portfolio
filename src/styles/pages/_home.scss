@@ -10,7 +10,7 @@
         padding: 0 0.5rem;
     }
 
-    @media (min-height: 650px){
+    @media (max-height: 650px){
        height: 100%;
     }
 
@@ -35,8 +35,8 @@
             font-size: 6rem;
         }
 
-        @media (min-height: 650px){
-            margin-top: 9rem;
+        @media (max-height: 650px){
+            margin-top: 7rem;
         }
     }
 
@@ -65,7 +65,7 @@
         text-align: center;
         color: var(--white);
 
-        @media (min-height: 650px){
+        @media (max-height: 650px){
             margin-bottom: 6rem;
         }
     }
