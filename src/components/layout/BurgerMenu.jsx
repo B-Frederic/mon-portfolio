@@ -11,7 +11,11 @@ const BurgerMenu = ({ setBurgerMenu }) => {
 
     const handleCloseBurgerMenu = () => {
         setBurgerMenu(false);
-      };
+    };
+
+    const handleToTop = () => {
+        window.scrollTo(0, 0);
+    }
 
     return (
         <motion.div
@@ -26,7 +30,7 @@ const BurgerMenu = ({ setBurgerMenu }) => {
                     <ul>
                         {
                             data.map((element, index) => (          
-                                <NavLink key={index} to={element.path} onClick={handleCloseBurgerMenu} className={(nav) => nav.isActive ? "active" : ""}><li>{element.link}</li></NavLink>
+                                <NavLink key={index} to={element.path} onClick={[handleCloseBurgerMenu, handleToTop]} className={(nav) => nav.isActive ? "active" : ""}><li>{element.link}</li></NavLink>
                             ))
                         }
                     </ul>
