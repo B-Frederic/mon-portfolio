@@ -6,7 +6,7 @@ const dataOther = ["Github", "VScode", "Firebase", "Stripe", "Linux", "CLI", "Co
 
 const dataHobbies = ["Blender", "Three.js"];
 
-const dataSoftSkills = ["Force de proposition", "Esprit d'équipe", "Sérieux", "Motivé", "Rigoureux", "Autonome", "Entreprenant", "Perfectionniste"];
+const dataSoftSkills = ["Force de proposition", "Esprit d'équipe", "Sérieux", "Motivé", "Rigoureux", "Autonome", "Entreprenant", "Capacité d'adaptation"];
 
 
 export {dataFront, dataBack, dataOther, dataHobbies, dataSoftSkills};
