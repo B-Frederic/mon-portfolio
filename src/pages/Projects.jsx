@@ -79,6 +79,9 @@ const Projects = () => {
             <div className="container-projects--box-card" key={index}>
               <h2>{element.title}</h2>
               <span>{element.tag}</span>
+              <div className="container-projects--box-card-responsive">
+                <p>{element.responsive}</p>
+              </div>
               <img src={element.img} alt={element.alt}></img>
               <div className="container-projects--box-card-social">
                 <Link

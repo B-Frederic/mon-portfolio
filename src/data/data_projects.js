@@ -1,4 +1,6 @@
-import { beauty, monshop, motmystere, musclay, portfolio, shopshoes } from "../assets/img"; 
+// Picture
+import { beauty, dashboard, monshop, motmystere, musclay, portfolio, shopshoes } from "../assets/img"; 
+
 
 const dataProjects = [
     {
@@ -10,6 +12,7 @@ const dataProjects = [
         css: "m-ui",
         back: "laravel",
         tool: "firebase",
+        responsive: "Ordinateur - Tablette - Portable",
         view: "https://musclay.web.app/",
         code: "https://github.com/B-Frederic/musclay",
     },
@@ -20,6 +23,7 @@ const dataProjects = [
         alt: "photo du site Mot Mystère",
         front: "js",
         css: "css",
+        responsive: "Ordinateur - Tablette - Portable",
         view: "https://frederic-betaouaf-motmystere.netlify.app/",
         code: "https://github.com/B-Frederic/Mot-Mystere",
     },
@@ -33,6 +37,7 @@ const dataProjects = [
         back: "express",
         tool: "firebase",
         payment: "stripe",
+        responsive: "Ordinateur - Tablette - Portable",
         view: "https://frederic-monshop.web.app/",
         code: "https://github.com/B-Frederic/monshop",
     },
@@ -45,6 +50,7 @@ const dataProjects = [
         redux: "redux",
         css: "scss",
         payment: "stripe",
+        responsive: "Ordinateur - Tablette - Portable",
         view: "https://frederic-b-beauty-shop.netlify.app/",
         code: "https://github.com/B-Frederic/shop-beauty",
     },
@@ -57,6 +63,7 @@ const dataProjects = [
         redux: "redux",
         css: "tailwind",
         payment: "stripe",
+        responsive: "Ordinateur - Tablette - Portable",
         view: "https://frederic-b-shop-shoes.netlify.app/",
         code: "https://github.com/B-Frederic/shop-shoes",
     },
@@ -67,8 +74,20 @@ const dataProjects = [
         alt: "photo du site Portfolio",
         front: "react",
         css: "scss",
+        responsive: "Ordinateur - Tablette - Portable",
         view: "https://frederic-betaouaf-portfolio.netlify.app/",
         code: "https://github.com/B-Frederic/mon-portfolio",
+    },
+        {
+        title: "Dashboard",
+        tag: "Dashboard",
+        img: `${dashboard}`,
+        alt: "photo du site Dashboard",
+        front: "react",
+        css: "css",
+        responsive: "Ordinateur",
+        view: "https://frederic-b-dashboard.netlify.app/",
+        code: "https://github.com/B-Frederic/dashboard",
     },
 ]
 

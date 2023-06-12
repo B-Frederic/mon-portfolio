@@ -6,5 +6,6 @@ import motmystere from "../img/motmystere.png";
 import musclay from "../img/musclay.png";
 import shopshoes from "../img/shopshoes.png";
 import portfolio from "../img/portfolio.png";
+import dashboard from "../img/dashboard.png";
 
-export {moi, cv, beauty, monshop, motmystere, musclay, shopshoes, portfolio};
+export { moi, cv, beauty, monshop, motmystere, musclay, shopshoes, portfolio,dashboard };
