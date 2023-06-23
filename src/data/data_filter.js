@@ -6,9 +6,21 @@ const dataFilter = [
         style: "#F0DB4F"
     },
     {
+        active: "typescript",
+        filter: "typescript",
+        text: "typescript",
+        style: "#2F74C0"
+    },
+    {
         active: "react",
         filter: "react",
         text: "react",
+        style: "#31acce"
+    },
+    {
+        active: "next",
+        filter: "next",
+        text: "next",
         style: "#31acce"
     },
     {

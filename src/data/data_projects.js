@@ -1,5 +1,5 @@
 // Picture
-import { beauty, dashboard, monshop, motmystere, musclay, portfolio, shopshoes } from "../assets/img"; 
+import { beauty, carhub, dashboard, monshop, motmystere, musclay, portfolio, shopshoes, voyage } from "../assets/img"; 
 
 
 const dataProjects = [
@@ -21,7 +21,7 @@ const dataProjects = [
         tag: "Jeu",
         img: `${motmystere}`,
         alt: "photo du site Mot Mystère",
-        front: "js",
+        script: "js",
         css: "css",
         responsive: "Ordinateur - Tablette - Portable",
         view: "https://frederic-betaouaf-motmystere.netlify.app/",
@@ -78,7 +78,7 @@ const dataProjects = [
         view: "https://frederic-betaouaf-portfolio.netlify.app/",
         code: "https://github.com/B-Frederic/mon-portfolio",
     },
-        {
+    {
         title: "Dashboard",
         tag: "Dashboard",
         img: `${dashboard}`,
@@ -88,6 +88,29 @@ const dataProjects = [
         responsive: "Ordinateur",
         view: "https://frederic-b-dashboard.netlify.app/",
         code: "https://github.com/B-Frederic/dashboard",
+    },
+    {
+        title: "CarHub",
+        tag: "Vitrine",
+        img: `${carhub}`,
+        alt: "photo du site Carhub",
+        front: "next",
+        script: "typescript",
+        css: "tailwind",
+        responsive: "Ordinateur - Tablette - Portable",
+        view: "https://frederic-b-showcase-cars.vercel.app/",
+        code: "https://github.com/B-Frederic/Showcase-Cars",
+    },
+    {
+        title: "Voyage",
+        tag: "Vitrine",
+        img: `${voyage}`,
+        alt: "photo du site Voyage",
+        front: "react",
+        css: "scss",
+        responsive: "Ordinateur - Tablette - Portable",
+        view: "https://frederic-b-showcase-travel.netlify.app/",
+        code: "https://github.com/B-Frederic/showcase-Travel",
     },
 ]
 

@@ -31,6 +31,7 @@ const Projects = () => {
         let temp = dataProjects.filter(
           (item) =>
             item.front === element ||
+            item.script === element ||
             item.css === element ||
             item.redux === element ||
             item.back === element ||
