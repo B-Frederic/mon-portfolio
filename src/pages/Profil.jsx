@@ -8,6 +8,7 @@ import LeftBtn from "../components/utils/LeftBtn";
 import RightBtn from "../components/utils/RightBtn";
 // Picture
 import { moi } from "../assets/img";
+import { NavLink } from "react-router-dom";
 
 const Profil = () => {
     return (
@@ -27,29 +28,20 @@ const Profil = () => {
                     <img src={moi} alt="photo du créateur du portfolio" />
                 </motion.div>
                 <div className="container-profil--text">
-                    <p>
-                        Je suis développeur web / web mobile depuis plus d'un an et me spécialise principalement dans le Frontend.<br />
-                        J'ai toujours été passionné par l'informatique sans avoir l'occasion d'en faire mon métier. Puis, il y a quelques années, j'ai eu un accident de travail qui m'a conduit à une RQTH. Cela a été l'occasion pour moi de me reconvertir dans le monde du numérique.<br/>
-                        N'aimant pas rester à rien faire, convalescent ou non, et en sachant d'avance que je ne pourrais plus exercer mon ancien métier, j'ai donc commencé à toucher aux langages (Python, C, C++, PHP, JS) pour anticiper mon avenir professionnel.
-                    </p>
-                    <p>
-                        Une fois officiellement parti de mon ancien travail, j'ai entrepris deux formations professionnelles: 
-                        <ul>
-                            <li>
-                                La première de 6 mois, axé principalement PHP (JS / PHP-Laravel / mySQL) avec une courte initiation au Javascript. Ayant eu un gros coup de coeur pendant l'initiation au Javascript et pour le front en général, j'ai donc choisi en fin de formation la spécialisation React.
-                            </li>
-                            <li>
-                                La seconde de 3 mois, exclusivement axée au Javascript fullstack (JS / Node-Express / postgreSQL-sequelize), pour approfondir ce langage et monter en compétences.
-                            </li>
-                        </ul>
-                        Pendant l'attente que j'ai eu entre les deux formations, j'ai pu faire des cours/projets Javascript ce qui m'a permis d'avoir un bon niveau théorique/pratique avant d'entrer en formation. Par la suite, j'ai converti certains projets JS vanilla en React. J'ai également pu découvrir de nouveaux langages/outils en parallèle à la formation comme Vuejs, Nextjs, Typescript, Tailwind, Firebase, Stripe etc...
-                    </p>
-                    <p>
-                        Je suis un grand passionné, je ne compte pas mes heures, j'aime les défis et n'ai pas peur d'apprendre et de découvrir de nouvelles choses, de sortir de ma zone de confort, car s'est justement dans ce cas-là qu'on s'améliore le plus.
-                    </p>
-                    <p>
-                        Je fais également du Blender et Three.js à titre de loisirs, car j'aime beaucoup son originalité et son côté sensationnel. En effet, je pense que la 3D deviendra de plus en plus présente sur les sites web dans les années à venir.
-                    </p>
+                  <p>Je m'appelle Frédéric Bétaouaf, j'ai 34ans et je vis dans le Sud Ouest de la France.  
+                  Je suis sortie de l'école de formation O'clock où j'ai pu faire les deux modules d'apprentissage (PHP / JS).</p>
+                  <p>Cela va faire bientôt 1.5 an que je travaille dans ce domaine en tant que Développeur Frontend. Je suis un très grand passionné et j'aime apprendre de nouvelles choses.</p>
+                  <p>J'ai eu l'occasion d'apprendre et de m'adapter à de nouveaux langages pour des projets que j'ai pu faire. Je n'aurais donc aucun mal à m'adapter à de nouveaux langages pour remplir la mission qui me sera confié.</p>
+                  <p>J'apprend également la 3D (Threejs / Blender) en parallèle, car j'aime beaucoup son originalité et son côté impressionnant. En effet, je pense que la 3D deviendra de plus en plus présente sur les sites web dans les années à venir.</p>
+
+                  <div className="container-profil--text-stack">
+                        <NavLink to="https://frederic-betaouaf-portfolio.netlify.app/projets">
+                            <button>Voir mes projets</button>
+                        </NavLink>
+                        <NavLink to="https://frederic-betaouaf-portfolio.netlify.app/competences">
+                            <button>Voir mes compétences</button>
+                        </NavLink>
+                  </div>
                 </div>
             </div>
             <div>

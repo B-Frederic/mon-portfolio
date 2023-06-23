@@ -42,7 +42,7 @@ const Skills = () => {
               </ul>
             </div>
             <div>
-              <h3>Autres : </h3>
+              <h3>Outils : </h3>
               <ul>
                 {dataOther.map((element, index) => (
                   <li key={index}>{element}</li>
@@ -50,7 +50,7 @@ const Skills = () => {
               </ul>
             </div>
             <div>
-              <h3>Autodidacte (loisirs) : </h3>
+              <h3>3D : </h3>
               <ul>
                 {dataHobbies.map((element, index) => (
                   <li key={index}>{element}</li>
