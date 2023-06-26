@@ -28,11 +28,13 @@ const Profil = () => {
                     <img src={moi} alt="photo du créateur du portfolio" />
                 </motion.div>
                 <div className="container-profil--text">
-                  <p>Je m'appelle Frédéric Bétaouaf, j'ai 34ans et je vis dans le Sud Ouest de la France.  
-                  Je suis sortie de l'école de formation O'clock où j'ai pu faire les deux modules d'apprentissage (PHP / JS).</p>
-                  <p>Cela va faire bientôt 1.5 an que je travaille dans ce domaine en tant que Développeur Frontend. Je suis un très grand passionné et j'aime apprendre de nouvelles choses.</p>
-                  <p>J'ai eu l'occasion d'apprendre et de m'adapter à de nouveaux langages pour des projets que j'ai pu faire. Je n'aurais donc aucun mal à m'adapter à de nouveaux langages pour remplir la mission qui me sera confié.</p>
-                  <p>J'apprend également la 3D (Threejs / Blender) en parallèle, car j'aime beaucoup son originalité et son côté impressionnant. En effet, je pense que la 3D deviendra de plus en plus présente sur les sites web dans les années à venir.</p>
+                  <p>Je m'appelle Frédéric Bétaouaf, je suis sortie de l'école de formation O'clock où j'ai pu faire les deux modules (PHP et JS).</p>
+                  <p>Cela va faire bientôt 1.5 an que je code et je me spécialise comme Développeur Frontend.</p>
+                  <p>Je pratique principalement React / Scss - Tailwind mais je fais également du JS / TS / Vue / Next - Bootstrap / Material-UI.</p>
+                  <p>Concernant le back, j'ai des connaissances en Php / Laravel / Node / Express / PostgreSQL / mySQL / MongoDB.</p>
+                  <p>Je maîtrises divers outils comme VScode / Github / CLI / Firebase / Stripe et j'ai des bases sur Postman / Compass.</p>
+                  <p>J'apprend également pendant mon temps libre la 3D (Threejs / Blender). En effet, je penses que la 3D sera de plus en plus présente sur les sites dans les années à venir.</p>
+                  <p>Je vous laisse en voir plus sur mes projets et/ou compétences.</p>
 
                   <div className="container-profil--text-stack">
                         <NavLink to="https://frederic-betaouaf-portfolio.netlify.app/projets">
